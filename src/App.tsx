@@ -194,8 +194,7 @@ function App() {
             Ready to Transform Your Hiring Process?
           </h2>
           <p className="text-content/80 text-xl mb-6">
-            Join Juniob today and discover pre-assessed junior developers ready
-            to contribute to your team.
+            Contact us via the email below to be notified when Juniob goes live.
           </p>
           <div className="flex items-center justify-center gap-2 text-content">
             <Mail className="h-5 w-5 text-primary" />
@@ -216,7 +215,7 @@ function App() {
             <div className="flex items-center gap-2">
               <span className="text-xl font-bold text-content">Juniob</span>
             </div>
-            <p>© 2025 Juniob. All rights reserved.</p>
+            <p>&#169; 2025 Juniob. All rights reserved.</p>
           </div>
         </div>
       </footer>
