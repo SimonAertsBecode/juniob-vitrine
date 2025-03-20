@@ -8,6 +8,7 @@ import {
   Users,
   Building2,
   Mail,
+  Euro,
 } from "lucide-react";
 
 function App() {
@@ -59,18 +60,18 @@ function App() {
                 Comprehensive Assessment
               </h3>
               <p className="text-content/80">
-                Our evaluation covers both fundamental and intermediate skills
-                that matter in real-world jobs.
+                Our technical assessment statements cover both fundamental and
+                intermediate skills that matter in real-world jobs
               </p>
             </div>
             <div className="bg-secondary/20 p-6 rounded-xl border border-primary/20">
               <Code2 className="h-10 w-10 text-primary mb-3" />
               <h3 className="text-xl font-semibold mb-2 text-content">
-                Beyond Basic Coding
+                See By Yourself
               </h3>
               <p className="text-content/80">
-                We evaluate problem-solving abilities, code quality, and
-                technical thinking.
+                Access and independently evaluate developers's technical
+                assessment codebases
               </p>
             </div>
           </div>
@@ -95,7 +96,7 @@ function App() {
                 icon: <Users className="h-8 w-8 text-primary" />,
                 title: "The Full Picture",
                 description:
-                  "View projects, certifications, and skills in one place.",
+                  "View projects, certifications, skills and much more in one place.",
               },
               {
                 icon: <Search className="h-8 w-8 text-primary" />,
@@ -113,7 +114,13 @@ function App() {
                 icon: <Building2 className="h-8 w-8 text-primary" />,
                 title: "Hire Way Faster",
                 description:
-                  "Cut hiring timeline by skipping technical assessments.",
+                  "Cut hiring timeline by skipping technical assessments and endless browsing.",
+              },
+              {
+                icon: <Euro className="h-8 w-8 text-primary" />,
+                title: "Cost Cutting",
+                description:
+                  "Stop using third party services and manage the entire recruitment process internally",
               },
             ].map((benefit, index) => (
               <div
