@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-interactive: #fe5e41;
+  --color-background: #35000e;
+  --color-secondary: #424b54;
+  --color-text: #e7e4cb;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+@media print {
+  @page {
+    margin: 15mm;
+    size: A4;
+  }
+  
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Ensure background colors print */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Remove elements not needed in PDF */
+  button:not(.contact-button) {
+    display: none !important;
+  }
+
+  /* Ensure proper page breaks */
+  section {
+    page-break-inside: avoid;
+  }
+
+  /* Reduce margins and padding for print */
+  .py-12 {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+
+  .py-16 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  .mb-8 {
+    margin-bottom: 1rem !important;
+  }
+
+  .gap-6 {
+    gap: 1rem !important;
+  }
+
+  .space-y-8 > * + * {
+    margin-top: 1rem !important;
+  }
+}
