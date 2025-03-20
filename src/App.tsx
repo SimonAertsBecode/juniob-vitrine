@@ -70,8 +70,8 @@ function App() {
                 See By Yourself
               </h3>
               <p className="text-content/80">
-                Access and independently evaluate developers's technical
-                assessment codebases
+                Access and independently evaluate developers' technical
+                assessment codebases.
               </p>
             </div>
           </div>
@@ -96,13 +96,19 @@ function App() {
                 icon: <Users className="h-8 w-8 text-primary" />,
                 title: "The Full Picture",
                 description:
-                  "View projects, certifications, skills and much more in one place.",
+                  "View developers' projects, certifications, skills, job criterias and much more in one place.",
               },
               {
                 icon: <Search className="h-8 w-8 text-primary" />,
                 title: "Smart Matching",
                 description:
                   "Find perfect candidates without endless scrolling.",
+              },
+              {
+                icon: <Euro className="h-8 w-8 text-primary" />,
+                title: "Cost Cutting",
+                description:
+                  "Stop using third party services and manage the entire recruitment process internally.",
               },
               {
                 icon: <MessageSquare className="h-8 w-8 text-primary" />,
@@ -115,12 +121,6 @@ function App() {
                 title: "Hire Way Faster",
                 description:
                   "Cut hiring timeline by skipping technical assessments and endless browsing.",
-              },
-              {
-                icon: <Euro className="h-8 w-8 text-primary" />,
-                title: "Cost Cutting",
-                description:
-                  "Stop using third party services and manage the entire recruitment process internally",
               },
             ].map((benefit, index) => (
               <div
@@ -162,13 +162,13 @@ function App() {
                 step: "3",
                 title: "Reach Out",
                 description:
-                  'Send a "contact request" to developers who catch your eye',
+                  'Send a "contact request" to developers who cought your eye',
               },
               {
                 step: "4",
                 title: "Direct Connection",
                 description:
-                  "Once they accept, you'll have access to their resume, personnal information, etc... And can start chatting directly",
+                  "Once they accept, you'll have access to their resume, personnal information, etc... And you can start chatting directly",
               },
             ].map((step, index) => (
               <div key={index} className="flex items-start gap-4">
@@ -194,7 +194,8 @@ function App() {
             Ready to Transform Your Hiring Process?
           </h2>
           <p className="text-content/80 text-xl mb-6">
-            Contact us via the email below to be notified when Juniob goes live.
+            Contact us via the email address below to be notified when Juniob
+            goes live.
           </p>
           <div className="flex items-center justify-center gap-2 text-content">
             <Mail className="h-5 w-5 text-primary" />
