@@ -102,7 +102,7 @@ function App() {
                 icon: <Search className="h-8 w-8 text-primary" />,
                 title: "Smart Matching",
                 description:
-                  "Find perfect candidates without endless scrolling.",
+                  "By entering your search criteria (required skills, contract type, salary range,...) find perfect candidates without endless scrolling.",
               },
               {
                 icon: <Euro className="h-8 w-8 text-primary" />,
