@@ -7,7 +7,7 @@ RUN npm i -g typescript
 
 FROM base AS dependencies
 WORKDIR /app
-COPY package.json pnpm-lock.yaml ./
+COPY package.json package-lock.json ./
 RUN npm install
 
 FROM base AS build
@@ -18,7 +18,7 @@ RUN npm run build
 
 FROM base AS deploy
 WORKDIR /app
-COPY --from=build /app/package.json /app/pnpm-lock.yaml ./
+COPY --from=build /app/package.json /app/package-lock.json ./
 COPY --from=build /app/dist/ ./dist/
 COPY --from=build /app/node_modules ./node_modules
 COPY --from=build /app/vite.config.ts ./vite.config.ts
